@@ -1,0 +1,11 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="trainingBaseProject.controller.TestView">
+	<App>
+		<pages>
+			<Page title="Title">
+				<content>
+				    <Button xmlns="sap.m" text="pressMe" id="idbtn" press="action" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" action:wiring="\{'press':\{'navigation':\{'routeName':'HomePage'\}\}\}"/>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

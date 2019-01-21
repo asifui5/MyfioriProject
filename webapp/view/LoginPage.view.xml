@@ -1,0 +1,82 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:u="sap.ui.unified" xmlns:l="sap.ui.layout" xmlns:tnt="sap.tnt" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" controllerName="trainingBaseProject.controller.LoginPage" height="100%">
+	<tnt:ToolHeader>
+		<ToolbarSpacer width="20px"/>
+		<Button xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" id="idNavBack" press="action" icon="sap-icon://navigation-left-arrow" action:wiring="\{'press':\{'navigation':\{'routeName':'HomePage'\}\}\}"/>
+		<!--<Button text="Login In" press="handleUserNamePress" type="Transparent"></Button>-->
+		<ToolbarSpacer width="30px"/>
+		<Label text="eNAM-National Agriculture Market" design="Bold"/>
+		<ToolbarSpacer>
+			<layoutData>
+				<OverflowToolbarLayoutData priority="AlwaysOverflow" minWidth="10px"/>
+			</layoutData>
+		</ToolbarSpacer>
+		<!--<Button text="Get User Detailes" icon="sap-icon://group" press="onread" type="Transparent"></Button>-->
+		<!--<Button text="update User Detailes" icon="sap-icon://group" press="onUpdate" type="Transparent"></Button>-->
+		<!--<Button id="idreg" text="Registration" icon="sap-icon://create-form" press="onregister" type="Transparent"></Button>-->
+		<Button id="idReg" text="Register" icon="sap-icon://request" type="Transparent" press="onRegister"/>
+	</tnt:ToolHeader>
+	<Page showHeader="false">
+		<content>
+				<FlexBox alignItems="Center" justifyContent="Center" height="100%">
+				<FlexBox alignItems="Center" justifyContent="Center" height="100%" id="idLabel" width="60%">
+					<Label text="National Agriculture Market" class="welcome1"/>
+				</FlexBox>
+			
+				<FlexBox alignItems="Center" justifyContent="Center" height="100%" id="idLoginPage">
+					<VBox height="80%" width="120%" class="LoginPageBackground">
+						<Text width="30px"/>
+						<HBox>
+							<Text width="40px"/>
+							<Image width="100%" height="80%" src="images/AgricultreLogo.jpg"/>
+						</HBox>
+						<Text width="30px"/>
+						<HBox>
+							<Text width="30px"/>
+							<Label text="User Name:" required="true" class="bold"/>
+						</HBox>
+						<HBox>
+							<Text width="30px"/>
+							<Input id="iduserName" width="250px"/>
+							<Text width="30px"/>
+						</HBox>
+						<Text width="30px"/>
+						<HBox>
+							<Text width="30px"/>
+							<Label text="Password:" required="true" class="bold"/>
+						</HBox>
+						<HBox>
+							<Text width="30px"/>
+							<Input id="idPswd" type="Password" change="onLogin" width="250px"/>
+							<Text width="30px"/>
+						</HBox>
+						<Text width="30px"/>
+						<HBox>
+							<Text width="30px"/>
+							<Label text="Language" class="bold"/>
+							<Text width="30px"/>
+						</HBox>
+						<HBox>
+							<Text width="30px"/>
+							<Select id="idCitys" width="200px" change="onCityChange">
+								<core:Item text="English" key="eng"/>
+								<core:Item text="Telugu" key="tlu"/>
+								<core:Item text="Hindi" key="hind"/>
+							</Select>
+							<Text width="30px"/>
+						</HBox>
+						<Text width="30px"/>
+						<HBox>
+							<Text width="30px"/>
+							<Link text="Forgot Password ?" press="onForgetPassword" class="linkColor"/>
+							<Text width="20px"/>
+							<Button id="idLogin" width="100px" text="Login" class="Color" press="action" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" action:wiring="\{'press':\{'navigation':\{'routeName':'TestView'\}\}\}"/>
+							<!--<Text width="5px"></Text>-->
+							<!--<Button id="idBack" icon="sap-icon://undo" press="onBack"></Button>-->
+						</HBox>
+						<Text width="30px"/>
+					</VBox>
+				</FlexBox>
+			</FlexBox>
+		</content>
+	</Page>
+</mvc:View>

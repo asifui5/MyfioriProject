@@ -1,0 +1,233 @@
+<mvc:View controllerName="trainingBaseProject.controller.RegistrationPage" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:u="sap.ui.unified" xmlns:l="sap.ui.layout" xmlns:tnt="sap.tnt" height="100%"
+	xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form">
+	<tnt:ToolHeader>
+		<ToolbarSpacer width="20px"/>
+		<Button id="idNavBack" press="onNavBack" icon="sap-icon://navigation-left-arrow"></Button>
+		<!--<Button text="Login In" press="handleUserNamePress" type="Transparent"></Button>-->
+		<ToolbarSpacer width="30px"/>
+		<Label text="eNAM-National Agriculture Market" design="Bold"></Label>
+		<ToolbarSpacer>
+			<layoutData>
+				<OverflowToolbarLayoutData priority="AlwaysOverflow" minWidth="10px"/>
+			</layoutData>
+		</ToolbarSpacer>
+		<!--<Button text="Get User Detailes" icon="sap-icon://group" press="onread" type="Transparent"></Button>-->
+		<!--<Button text="update User Detailes" icon="sap-icon://group" press="onUpdate" type="Transparent"></Button>-->
+		<!--<Button id="idreg" text="Registration" icon="sap-icon://create-form" press="onregister" type="Transparent"></Button>-->
+		<Button id="idlogin" text="Login" icon="sap-icon://employee" type="Transparent" press="onlogin"></Button>
+	</tnt:ToolHeader>
+	<Page showHeader="false">
+		<content>
+			<Image src="images/img1.png"></Image>
+			<!--	<Panel headerText="Register Form">
+				<l:Grid vSpacing="0" >
+					<l:content>
+						<Label text="Title" required="true"/>
+						<Select id="idTitle" width="200px" change="onCityChange">
+							<core:Item text="-select-" key="eng"></core:Item>
+							<core:Item text="Mr" key="eng"></core:Item>
+							<core:Item text="Mrs" key="eng"></core:Item>
+							<core:Item text="Ms" key="eng"></core:Item>
+						</Select>
+						<Label text="Middle Name"/>
+						<Input/>
+						<Label text="Gender" required="true"/>
+						<Select id="idGender" width="200px" change="onCityChange">
+							<core:Item text="-select-" key="eng"></core:Item>
+							<core:Item text="Male" key="eng"></core:Item>
+							<core:Item text="Female" key="eng"></core:Item>
+						</Select>
+						<Label text="Son/Daughter/Wife" required="true"/>
+						<Select id="idSonOf" width="200px" change="onCityChange">
+							<core:Item text="-select-" key="eng"></core:Item>
+							<core:Item text="Son Of" key="eng"></core:Item>
+							<core:Item text="Daughter Of" key="eng"></core:Item>
+							<core:Item text="Wife Of" key="eng"></core:Item>
+						</Select>
+						<Label text="city / Vilage"/>
+						<Input/>
+						<Label text="Pin Code"/>
+						<Input/>
+						<Label text="District"/>
+						<Input/>
+						<Label text="Photo Id Type"/>
+						<Select id="idPotoId" width="200px" change="onCityChange">
+							<core:Item text="-select-" key=""></core:Item>
+							<core:Item text="Aadhaar" key=""></core:Item>
+							<core:Item text="PAN Card" key=""></core:Item>
+							<core:Item text="Ration card" key=""></core:Item>
+							<core:Item text="draving Licence" key=""></core:Item>
+							<core:Item text="Voter ID" key=""></core:Item>
+							<core:Item text="Passport" key=""></core:Item>
+						</Select>
+						<Label text="Mobile Number"/>
+						<Input/>
+					</l:content>
+				</l:Grid>
+			</Panel>-->
+			<f:SimpleForm title="Fill Fallowing Information" maxContainerCols="2" editable="true" layout="ResponsiveGridLayout" labelSpanL="4"
+				labelSpanM="4" emptySpanL="0" emptySpanM="0" columnsL="2" columnsM="2">
+				<f:content>
+					<core:Title text=""/>
+					<Label text="Registration lavel" required="true"/>
+					<RadioButtonGroup id="idRegLavel" buttons="" columns="2" select="onSelect">
+						<RadioButton text="State"></RadioButton>
+						<RadioButton text="APMC"></RadioButton>
+					</RadioButtonGroup>
+					<Label text="Registration Type" required="true"/>
+					<Select id="idCitys" width="200px" change="onCityChange">
+						<core:Item text="-select-" key="eng"></core:Item>
+						<core:Item text="Seller" key="eng"></core:Item>
+						<core:Item text="Buyer" key="tlu"></core:Item>
+						<core:Item text="Commission Agent" key="hind"></core:Item>
+						<core:Item text="Service Provider" key="eng"></core:Item>
+					</Select>
+				</f:content>
+			</f:SimpleForm>
+			<f:SimpleForm title="Former Registration Form" maxContainerCols="2" editable="true" layout="ResponsiveGridLayout" labelSpanL="5"
+				labelSpanM="2" emptySpanL="0" emptySpanM="1" columnsL="2" columnsM="2">
+				<f:content>
+					<core:Title text=""/>
+					<Label text="Title" required="true"/>
+					<Select id="idTitle" width="200px" change="onCityChange">
+						<core:Item text="-select-" key="eng"></core:Item>
+						<core:Item text="Mr" key="eng"></core:Item>
+						<core:Item text="Mrs" key="eng"></core:Item>
+						<core:Item text="Ms" key="eng"></core:Item>
+					</Select>
+					<Label text="Middle Name"/>
+					<Input/>
+					<Label text="Gender" required="true"/>
+					<Select id="idGender" width="200px" change="onCityChange">
+						<core:Item text="-select-" key="eng"></core:Item>
+						<core:Item text="Male" key="eng"></core:Item>
+						<core:Item text="Female" key="eng"></core:Item>
+					</Select>
+					<Label text="Son/Daughter/Wife" required="true"/>
+					<Select id="idSonOf" width="200px" change="onCityChange">
+						<core:Item text="-select-" key="eng"></core:Item>
+						<core:Item text="Son Of" key="eng"></core:Item>
+						<core:Item text="Daughter Of" key="eng"></core:Item>
+						<core:Item text="Wife Of" key="eng"></core:Item>
+					</Select>
+					<core:Title text=""/>
+					<Label text="first Name" required="true"/>
+					<Input/>
+					<Label text="Last Name" required=" true"/>
+					<Input/>
+					<Label text="Date Of Birth "/>
+					<DatePicker ></DatePicker>
+					<Label text=" "/>
+					<DatePicker ></DatePicker>
+				</f:content>
+			</f:SimpleForm>
+			<f:SimpleForm editable="true" layout="ResponsiveGridLayout" labelSpanL="2" labelSpanM="2" emptySpanL="4" emptySpanM="4" columnsL="2"
+				columnsM="2">
+				<f:content>
+					<Label text="Address / (Street)" required="true"></Label>
+					<TextArea maxLength="40" width="100%" showExceededText="false" rows="3"/>
+				</f:content>
+			</f:SimpleForm>
+			<f:SimpleForm maxContainerCols="2" editable="true" layout="ResponsiveGridLayout" labelSpanL="5" labelSpanM="2" emptySpanL="0" emptySpanM="1"
+				columnsL="2" columnsM="2">
+				<f:content>
+					<core:Title text=""/>
+					<Label text="city / Vilage"/>
+					<Input/>
+					<Label text="Pin Code"/>
+					<Input/>
+					<Label text="District"/>
+					<Input/>
+					<Label text="Photo Id Type"/>
+					<Select id="idPotoId" width="200px" change="onCityChange">
+						<core:Item text="-select-" key=""></core:Item>
+						<core:Item text="Aadhaar" key=""></core:Item>
+						<core:Item text="PAN Card" key=""></core:Item>
+						<core:Item text="Ration card" key=""></core:Item>
+						<core:Item text="draving Licence" key=""></core:Item>
+						<core:Item text="Voter ID" key=""></core:Item>
+						<core:Item text="Passport" key=""></core:Item>
+					</Select>
+					<Label text="Mobile Number"/>
+					<Input/>
+					<core:Title text=""/>
+					<Label text="Post"/>
+					<Input/>
+					<Label text="State" required="true"/>
+					<Select id="idState" width="200px" items="{/aCitys}" change="onCityChange">
+						<core:Item text="{City}" key="{City}"></core:Item>
+						<!--<core:Item text="Andra Pradesh (AP)" key="eng"></core:Item>-->
+						<!--<core:Item text="Telangana (TS)" key="eng"></core:Item>-->
+						<!--<core:Item text="Tamilnadu(TN) " key="eng"></core:Item>-->
+					</Select>
+					<Label text="Tehsil" required="true"/>
+					<Input/>
+					<Label text="Photo Id Number" required="true"/>
+					<Input/>
+					<Label text="Email Id" required="true"/>
+					<Input/>
+				</f:content>
+			</f:SimpleForm>
+			<f:SimpleForm title="Bank Account Detailes" maxContainerCols="2" editable="true" layout="ResponsiveGridLayout" labelSpanL="5" labelSpanM="2"
+				emptySpanL="0" emptySpanM="1" columnsL="2" columnsM="2">
+				<f:content>
+					<core:Title/>
+					<Label text="Account Holder name(As per bank detailes)" required="true"/>
+					<Input/>
+					<Label text="Bank Account number" required="true"/>
+					<Input/>
+					<Label text="confirm Account Number" required="true"/>
+					<Input/>
+					<core:Title text=""/>
+					<Label text="Bank Name" required="true"/>
+					<Input/>
+					<Label text="IFSC Code" required="true"/>
+					<Input/>
+					<Label text="confirm IFSC Code" required="true"/>
+					<Input/>
+				</f:content>
+			</f:SimpleForm>
+			<f:SimpleForm title="Uploads" maxContainerCols="2" editable="true" layout="ResponsiveGridLayout" labelSpanL="4" labelSpanM="4"
+				emptySpanL="0" emptySpanM="0" columnsL="2" columnsM="2">
+				<f:content>
+					<Label text="upload copy Of Passbok/Cancelled Check in Support"/>
+					<u:FileUploader id="fileUploader" name="myFileUpload" uploadUrl="upload/" width="400px" tooltip="Upload your file to the local server"
+						uploadComplete="handleUploadComplete"/>
+					<Label text="confirm IFSC Code"/>
+					<u:FileUploader id="fileUploader2" name="myFileUpload" uploadUrl="upload/" width="400px" tooltip="Upload your file to the local server"
+						uploadComplete="handleUploadComplete"/>
+				</f:content>
+			</f:SimpleForm>
+			<FlexBox alignItems="Center" justifyContent="Center" visible="true" height="10%" id="idMainPage">
+				<HBox>
+					<Button text="Submit" type="Emphasized" press="onsubmit"></Button>
+					<Text width="20px"></Text>
+					<Button text="cancle" press="onCancle" type="Emphasized"></Button>
+				</HBox>
+			</FlexBox>
+			
+			<tnt:ToolHeader height="30%">
+				<ToolbarSpacer width="20%"/>
+				<VBox>
+					<HBox>
+						<Text width="100px"></Text>
+						<Image src="images/icon1.jpg"></Image>
+						<Text width="20px"></Text>
+						<Image src="images/icon2.jpg"></Image>
+						<Text width="20px"></Text>
+						<Image src="images/icon3.jpg"></Image>
+						<Text width="20px"></Text>
+						<Image src="images/icon4.jpg"></Image>
+						<Text width="20px"></Text>
+						<Image src="images/icon5.jpg"></Image>
+					</HBox>
+					<VBox alignContent="Center" alignItems="Center">
+						<Label text="Department of Agriculture, Cooperation And Farmers' Welfare, Ministry of Agriculture and Farmers' Welfare, Government of India"></Label>
+						<Label text="Visitors Count: 158192"></Label>
+					</VBox>
+				</VBox>
+			</tnt:ToolHeader>
+		</content>
+	</Page>
+</mvc:View>

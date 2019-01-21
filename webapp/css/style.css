@@ -1,0 +1,217 @@
+.bold {
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.sapContrast.sapTntToolHeader.sapMTB {
+    background-color: #171616;
+    border: 1px solid #3f5161;
+}
+
+.sapMImg1 {
+    width: 100%;
+    height: 100%;
+    /*max-height: 100%;*/
+    /*border: none;*/
+    /*background-size: 20px 20px;*/
+    background-size: cover;
+    /*background-size: 100% 100%;*/
+    /*background-repeat: no-repeat;*/
+}
+
+.sapMImg2 {
+    width: 34%;
+    height: 14%;
+    /*max-height: 100%;*/
+    /*border: none;*/
+    /*background-size: 20px 20px;*/
+    /*background-size: cover;*/
+    /*background-size: 100% 100%;*/
+    /*background-repeat: no-repeat;*/
+}
+
+.sapMImg3 {
+    border: none;
+    background-size: 0px 60px;
+}
+
+.sapMImg4 {
+    border: none;
+    background-size: 10px 60px;
+}
+
+.login {
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 300%;
+}
+
+.welcome1 {
+    color: #556B2F;
+    font-size: 300%;
+    font-weight: bold
+}
+
+.welcome2 {
+    color: #848482;
+    font-size: 200%;
+    font-weight: bold
+}
+
+.UserLoginImage {
+    background-image: url("../images/index.png");
+    /*margin: 0;*/
+    background-size: cover;
+    background-size: 800px 500px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+element.style {
+    background-size: 20px 20px;
+}
+
+
+/*.sapUiFormResGrid.sapUiFormBackgrTranslucent>div {*/
+
+
+/*backGround Simple form*/
+
+
+/*    background-color: #BCC6CC;*/
+
+
+/*}*/
+
+
+/*.sapUiForm .sapUiFormTitle {*/
+
+
+/*    border-width: 1px;*/
+
+
+/*    border-color: black;*/
+
+
+/*    background-color: #E5E4E2;*/
+
+
+/*    font-family: Arial, Helvetica, sans-serif;*/
+
+
+/*}*/
+
+
+/*.sapMOH.sapMOHBgTransparent,*/
+
+
+/*.sapMOHC.sapMOHBgTransparent {*/
+
+
+/*    background: transparent;*/
+
+
+/*}*/
+
+
+/*.sapUiSizeCompact .sapMPageWithHeader>section {*/
+
+
+/*    top: 2.5rem;*/
+
+
+/*    background-color: #E5E4E2;*/
+
+
+/*}*/
+
+.LoginPageBackground {
+    login page back -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+    background-color: #5C5858;
+}
+
+
+/*.sapMLnk:visited {*/
+
+
+/*    color: #5C5858;*/
+
+
+/*}*/
+
+.sapMIBar.sapMHeader-CTX {
+    header login Page Top color: #666666;
+    background-color: #D1D0CE;
+    filter: none;
+    background-image: none;
+}
+
+
+/*.sapMTitle {*/
+
+
+/*header*/
+
+
+/*    font-weight: bolder;*/
+
+
+/*    color: #333333;*/
+
+
+/*    font-family: Arial, Helvetica, sans-serif;*/
+
+
+/*    text-shadow: 0 0 0.125rem #ffffff;*/
+
+
+/*}*/
+
+
+/*.sapMPanelBGSolid {*/
+
+
+/*    background-color: #D1D0CE;*/
+
+
+/*}*/
+
+
+/*.sapUiFormResGrid>div {*/
+
+
+/*    padding: 1rem 0.75rem;*/
+
+
+/*    box-sizing: border-box;*/
+
+
+/*    background-color: #BCC6CC;*/
+
+
+/*}*/
+
+.dashBoard {
+    background-image: url("../images/Sales.jpeg");
+}
+
+.sapMLnk {
+    color: #F87217;
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+.side-navigation-demo {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    max-width: 15rem;
+}

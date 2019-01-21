@@ -1,0 +1,9 @@
+<mvc:View controllerName="trainingBaseProject.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" xmlns:f="sap.ui.layout.form">
+	<Page title="Base Project">
+		<content>
+			<Input id="onclick" width="200px"></Input>
+			<Button id="idbtn" press="onclick"></Button>
+		</content>
+	</Page>
+</mvc:View>

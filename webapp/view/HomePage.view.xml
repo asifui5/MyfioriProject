@@ -1,0 +1,105 @@
+<mvc:View controllerName="trainingBaseProject.controller.HomePage" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" xmlns:tnt="sap.tnt" height="100%" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core">
+	<!--<tnt:ToolHeader>-->
+	<!--	<ToolbarSpacer width="20px"/>-->
+	<!--	<Label id="idWelcome" text="Welcome" visible="true"></Label>-->
+	<!--	<Button id="idNavBack" visible="false" press="onNavBack" icon="sap-icon://navigation-left-arrow"></Button>-->
+	<!--<Button text="Login In" press="handleUserNamePress" type="Transparent"></Button>-->
+	<!--	<ToolbarSpacer width="30px"/>-->
+	<!--	<Label text="eNAM-National Agriculture Market2" design="Bold"></Label>-->
+	<!--	<ToolbarSpacer>-->
+	<!--		<layoutData>-->
+	<!--			<OverflowToolbarLayoutData priority="NeverOverflow" minWidth="10px"/>-->
+	<!--		</layoutData>-->
+	<!--	</ToolbarSpacer>-->
+	<!--<Button text="Get User Detailes" icon="sap-icon://group" press="onread" type="Transparent"></Button>-->
+	<!--<Button text="update User Detailes" icon="sap-icon://group" press="onUpdate" type="Transparent"></Button>-->
+	<!--	<Text id="idUser"></Text>-->
+	<!--	<Button id="idreg" text="Registration" icon="sap-icon://create-form" press="onregister" type="Transparent"></Button>-->
+	<!--	<Button id="idlogin" text="Login" icon="sap-icon://employee" type="Transparent" press="onLoginBtn"></Button>-->
+	<!--	<Button id="idMycred" visible="false" text="My Credentials" type="Transparent" press="handleCredentialsPress">-->
+	<!--		<layoutData>-->
+	<!--			<OverflowToolbarLayoutData priority="NeverOverflow"/>-->
+	<!--		</layoutData>-->
+	<!--	</Button>-->
+	<!--</tnt:ToolHeader>-->
+	<Page showHeader="false">
+		<content>
+			<Text width="3%"></Text>
+			<Image src="images/g-logo.png" class="sapMImg3"></Image>
+			<Text width="3%"></Text>
+			<Image src="images/enam-logo.png" class="sapMImg4"></Image>
+			<Text width="3%"></Text>
+			<core:Icon src="sap-icon://employee" color="#8875E7"></core:Icon>
+			<Link text="Login Hear" class="login" press="onLoginBtn"></Link>
+			<Text width="3%"></Text>
+			<core:Icon src="sap-icon://request" color="#8875E7"></core:Icon>
+			<Link text="Registration" class="login" press="onregister"></Link>
+			<!--<tnt:ToolHeader height="10%">-->
+			<!--<IconTabHeader id="iconTabHeader" selectedKey="invalidKey" select="onSelectTab" showOverflowSelectList="true" backgroundDesign="Transparent">-->
+			<!--	<layoutData>-->
+			<!--		<OverflowToolbarLayoutData priority="NeverOverflow" shrinkable="true"/>-->
+			<!--	</layoutData>-->
+			<!--	<items>-->
+			<Carousel class="sapUiContentPadding" loop="true" id="carouselSample" height="50%" width="100%">
+				<Image src="images/slider_3.jpg" class="sapMImg1"></Image>
+				<Image src="images/slider_5.jpg" class="sapMImg1"></Image>
+				<Image src="images/slider_7.jpg" class="sapMImg1"></Image>
+				<Image src="images/slider8.jpg" class="sapMImg1"></Image>
+			</Carousel>
+			<Panel id="idPanel" class="sapMShellglobelOuterBackground">
+				<IconTabBar id="iconTabBar" class="sapUiResponsiveContentPadding">
+					<items type="Transparent">
+						<IconTabFilter text="Home" icon="sap-icon://home">
+							<Button text="btn"></Button>
+						</IconTabFilter>
+						<IconTabFilter text="Stakeholders" press="onStakeholders">
+							<Text text="gi"></Text>
+						</IconTabFilter>
+						<IconTabFilter text="API Reference"></IconTabFilter>
+						<IconTabFilter text="Demo Apps"></IconTabFilter>
+					</items>
+				</IconTabBar>
+			</Panel>
+			<!--</IconTabHeader>-->
+			<!--</tnt:ToolHeader>-->
+			<!--	<ToolbarSpacer width="20px"/>
+		<Button text="Home" press="handleUserNamePress" type="Transparent"></Button>
+		<ToolbarSpacer width="20px"/>
+		<Button text="eNAM Mandis" press="onCreateAccount" type="Transparent"></Button>
+		<ToolbarSpacer width="20px"/>
+		<Button text="Stakeholders" icon="sap-icon://dropdown" press="onStackholders" type="Transparent"></Button>
+		<ToolbarSpacer width="20px"/>
+		<Button text="Aspirational Districts" press="onPressCustomers" type="Transparent"></Button>
+		<ToolbarSpacer width="20px"/>
+		<Button text="Dashboard" icon="sap-icon://dropdown" press="onHelp" type="Transparent"></Button>
+		<ToolbarSpacer width="20px"/>
+		<Button text="eLearning Videos" type="Transparent" press="handleUserNamePress"></Button>
+		<ToolbarSpacer width="20px"/>
+		<Button text="Resources" icon="sap-icon://dropdown" press="onPressCustomers" type="Transparent"></Button>
+		<Button text="Events Gallery" press="onHelp" type="Transparent"></Button>
+		<Button text="contact Us" type="Transparent" press="handleUserNamePress"></Button>-->
+			<tnt:ToolHeader height="20%">
+				<ToolbarSpacer width="20%"/>
+				<VBox>
+					<HBox>
+						<Text width="100px"></Text>
+						<Image src="images/icon1.jpg"></Image>
+						<Text width="20px"></Text>
+						<Image src="images/icon2.jpg"></Image>
+						<Text width="20px"></Text>
+						<Image src="images/icon3.jpg"></Image>
+						<Text width="20px"></Text>
+						<Image src="images/icon4.jpg"></Image>
+						<Text width="20px"></Text>
+						<Image src="images/icon5.jpg"></Image>
+					</HBox>
+					<VBox alignContent="Center" alignItems="Center">
+						<Label text="Department of Agriculture, Cooperation And Farmers' Welfare, Ministry of Agriculture and Farmers' Welfare, Government of India"></Label>
+						<Label text="Visitors Count: 158192"></Label>
+					</VBox>
+				</VBox>
+			</tnt:ToolHeader>
+		</content>
+	</Page>
+</mvc:View>
